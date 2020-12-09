@@ -1,0 +1,65 @@
+﻿.icon {
+    margin-left: 40px;
+}
+#content h2, #content h3 {
+    margin-left: 10px;
+}
+.product {
+    margin: 10px;
+    float: left;
+}
+header h1 {
+    font-size: 48px;
+}
+nav {
+    position: absolute;
+    top: 70px;
+    left: 420px;
+}
+    nav a {
+        float: none;
+        display: block;
+        text-decoration: none;
+        border: 2px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 0px;
+        margin: 15px;
+        width: 140px;
+        height: 35px;
+    }
+
+        nav a:hover {
+            background-color: #6192A2;
+            text-decoration: underline;
+            color: #480E96;
+        }
+        nav a#active {
+            border: 2px solid #000;
+        }
+            nav a#active:hover {
+                background-color: transparent;
+            }
+    nav h3 {
+        margin: 8px;
+        text-align: center;
+    }
+section {
+    float: left;
+    width: 80%;
+   
+}
+aside {
+    float: right;
+    width: 20%;
+    border-top: none;
+}
+.withoutaside {
+    width: 100%;
+}
+.field {
+    width: 50%;
+    float: left;
+}
+.row:after {
+    clear: both;
+}

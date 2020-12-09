@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Customer Service</title>
+    <link rel="stylesheet" href="../CssAndScripts/StyleSheetDefault.css" />
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="../CssAndScripts/StyleSheet600plus.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="../CssAndScripts/StyleSheet992plus.css">
+</head>
+<body>
+    <header>
+        <img class="icon" src="../Media/ZacksXylophones.png" alt="Zack's Xylophones" />
+        <h1>Contact Us</h1>
+
+        <nav>
+            <a href="../index.html"><h3>Home</h3></a>
+            <a href="../Products/index.html"><h3>Products</h3></a>
+            <a href="../CustomerService/index.html" id="active"><h3>Support</h3></a>
+            <a href="../AboutUs/index.html"><h3>About Us</h3></a>
+        </nav>
+    </header>
+
+    <div id="content">
+        <section>
+            <h3>Please provide your information and we'll get back to you as soon as possible!</h3>
+            <form>
+                <div class="field">
+                    <label for="theName">What's your name:</label>
+                    <input id="theName" name="username" type="text" autofocus required />
+                </div>
+                <div class="field">
+                    <label for="telNum">Your phone number:</label>
+                    <input id="telNum" name="usernumber" type="tel" placeholder="555-555-5555" required />
+                </div>
+                <div class="field">
+                    <label for="email">And your email address:</label>
+                    <input id="email" name="useremail" type="email" placeholder="email@domain.com" required />
+                </div>
+                <div class="field">
+                    <label for="issue">What is your issue?</label>
+                    <select id="issue" name="issue">
+                        <option value="question">Question about a product</option>
+                        <option value="repair">Repair service</option>
+                        <option value="order">Order tracking</option>
+                    </select>
+                </div>
+                <div class="field break">
+                    <label for="questions">What can we help with?</label>
+                    <textarea id="questions" name="questions" rows="8" cols="40"></textarea>
+                </div>
+                <div class="field break">
+                    <input type="submit" value="Send" />
+                </div>
+            </form>
+        </section>
+        <aside>
+            <p>We can also be reached Monday through Friday, 8am to 5pm EST at <span class="nowrap"><a href="tel:+18655555309">865-555-5309</a></span>. Why fill out the form when you can speak to someone now?</p>
+            <p>Our email address is <a href="mailto:Zack@email.com">Zack@email.com</a></p>
+        </aside>
+        
+    </div>
+    <footer>
+        <p>Kopywrite &#x24C0; 2020 - Zack's Xylophones | Zack Garron | CITC1300</p>
+    </footer>
+   
+</body>
+</html>

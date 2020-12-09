@@ -1,0 +1,130 @@
+﻿:root {
+    --primary-color: #18189B;
+    --secondary-color: #add8e6;
+   --section-color: #b5beea90;
+}
+.break {
+    clear: both;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+body {
+    background-color: var(--secondary-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Monotype Corsiva', 'Times New Roman', serif;
+    color: var(--primary-color);
+    text-align: center;
+}
+p, li, label, input, textarea, select {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ul {
+    list-style-image: url("Media/note.png");
+}
+hr {
+    border: 1px dotted var(--primary-color);
+}
+.field {
+    margin-bottom: 15px;
+}
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+}
+nav {
+    overflow-y: auto;
+}
+    nav a {
+        float: left;
+        width: 25%;
+        font-size: larger;
+    }
+        nav a#active {
+            text-decoration: none;
+        }
+            nav a#active h3 {
+                color: #000;
+            }
+header {
+    border-bottom: 1px solid var(--primary-color);
+}
+section {
+    background-color: var(--section-color);
+    overflow-y: auto;
+}
+    section #flag {
+        height: 130px;
+        width: 130px;
+        float: left;
+        shape-outside: circle();
+        margin-left: 15px;
+        margin-right: 25px;
+    }
+    section #mallets {
+        height: 150px;
+        width: 150px;
+        float: right;
+        margin: 0 15px 15px 15px;
+    }
+aside {
+    border-top: 1px solid var(--primary-color);
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid var(--primary-color);
+}
+.product {
+    border: 3px solid black;
+    border-radius: 4px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+}
+    .product img {
+        max-height: 200px;
+        max-width: 200px;
+        display: block;
+        margin: 0px auto 10px auto;
+    }
+    .product p {
+        position: absolute;
+        text-align: center;
+        left: 10px;
+        right: 10px;
+        top: 220px;
+    }
+    .product button {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        left: 100px;
+        bottom: 10px;
+    }
+        .product button:hover {
+            text-decoration: underline;
+            background-color: #6192A2;
+        }
+        .product button:active {
+            background-color: #555;
+        }
+input:focus, textarea:focus, select:focus {
+    background-color: #ddf;
+}
